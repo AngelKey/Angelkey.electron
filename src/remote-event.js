@@ -12,8 +12,7 @@ import 'rxjs/add/operator/publish';
 const isBrowser = process.type === 'browser';
 
 if (!isBrowser) {
-  require(require.resolve('./remote-event-browser'));
-  // remote.require(require.resolve('./remote-event-browser'));
+  remote.require(require.resolve('./remote-event-browser'));
 }
 
 const d = require('debug')('remote-event');
