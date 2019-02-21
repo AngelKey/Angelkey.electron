@@ -1,1 +1,1 @@
-module.exports = require('./lib/remote-ajax');
+module.exports = require('./src/remote-ajax');
